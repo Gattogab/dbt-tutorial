@@ -1,0 +1,347 @@
+[0m11:17:36.098511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA99ABB190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA9BA6B100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA9893EAF0>]}
+
+
+============================== 11:17:36.101378 | 0b9bba6d-59e7-4680-839d-233db9577532 ==============================
+[0m11:17:36.101378 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:17:36.102525 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init jaffle_shop', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:17:36.146493 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/ggatto/.dbt')}
+[0m11:17:36.147512 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:17:36.150071 [debug] [MainThread]: Starter project path: C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m11:17:36.163385 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:17:36.165349 [info ] [MainThread]: Setting up your profile.
+[0m11:20:49.489486 [error] [MainThread]: Encountered an error:
+
+[0m11:20:49.489486 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:20:49.495004 [debug] [MainThread]: Command `dbt init` failed at 11:20:49.495004 after 193.45 seconds
+[0m11:20:49.495004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA99ABB190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CA9C651EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CAAE0C42B0>]}
+[0m11:20:49.496257 [debug] [MainThread]: Flushing usage events
+[0m11:21:00.194556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED3FBBF160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED426870D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED42687910>]}
+
+
+============================== 11:21:00.210091 | 542d4e1b-8bae-40a6-ab33-f39f193aa917 ==============================
+[0m11:21:00.210091 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:21:00.210091 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init jaffle_shop', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:21:00.211882 [info ] [MainThread]: A project called jaffle_shop already exists here.
+[0m11:21:00.211882 [debug] [MainThread]: Command `dbt init` succeeded at 11:21:00.211882 after 0.07 seconds
+[0m11:21:00.211882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED3FBBF160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED427030A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED4272F8E0>]}
+[0m11:21:00.211882 [debug] [MainThread]: Flushing usage events
+[0m11:23:09.011751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C73A0B190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C763A9490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C7288EAF0>]}
+
+
+============================== 11:23:09.013757 | 95110471-d0db-44bb-866f-736fad064df2 ==============================
+[0m11:23:09.013757 [info ] [MainThread]: Running with dbt=1.8.4
+[0m11:23:09.014748 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt init jaffle_shop', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:23:09.029279 [debug] [MainThread]: Starter project path: C:\Users\ggatto\Python_env\DBT\dbt-env\lib\site-packages\dbt\include\starter_project
+[0m11:23:09.042861 [info ] [MainThread]: 
+Your new dbt project "jaffle_shop" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:23:09.043863 [info ] [MainThread]: Setting up your profile.
+[0m11:26:24.297213 [info ] [MainThread]: Profile jaffle_shop written to C:\Users\ggatto\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:26:24.298264 [debug] [MainThread]: Command `dbt init` succeeded at 11:26:24.298264 after 195.33 seconds
+[0m11:26:24.299298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C73A0B190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C75960E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C763A9490>]}
+[0m11:26:24.299298 [debug] [MainThread]: Flushing usage events
+[0m12:06:13.339017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E399B55340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E39C62F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E39C62FF70>]}
+
+
+============================== 12:06:13.354761 | e4d3d9df-6e68-4cd3-a710-97a7acc782ae ==============================
+[0m12:06:13.354761 [info ] [MainThread]: Running with dbt=1.8.4
+[0m12:06:13.354761 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:06:13.432774 [info ] [MainThread]: dbt version: 1.8.4
+[0m12:06:13.432774 [info ] [MainThread]: python version: 3.8.2rc2
+[0m12:06:13.432774 [info ] [MainThread]: python path: C:\Users\ggatto\Python_env\DBT\dbt-env\Scripts\python.exe
+[0m12:06:13.432774 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m12:06:17.121377 [info ] [MainThread]: Using profiles dir at C:\Users\ggatto\.dbt
+[0m12:06:17.121377 [info ] [MainThread]: Using profiles.yml file at C:\Users\ggatto\.dbt\profiles.yml
+[0m12:06:17.121377 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ggatto\Python_env\DBT\dbt_project.yml
+[0m12:06:17.121377 [info ] [MainThread]: adapter type: bigquery
+[0m12:06:17.121377 [info ] [MainThread]: adapter version: 1.8.2
+[0m12:06:17.121377 [info ] [MainThread]: Configuration:
+[0m12:06:17.121377 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:06:17.121377 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:06:17.121377 [info ] [MainThread]: Required dependencies:
+[0m12:06:17.121377 [debug] [MainThread]: Executing "git --help"
+[0m12:06:17.262082 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:06:17.262082 [debug] [MainThread]: STDERR: "b''"
+[0m12:06:17.262082 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:06:17.262082 [info ] [MainThread]: Connection:
+[0m12:06:17.262082 [info ] [MainThread]:   method: service-account
+[0m12:06:17.262082 [info ] [MainThread]:   database: swift-shore-430308-j4
+[0m12:06:17.262082 [info ] [MainThread]:   execution_project: swift-shore-430308-j4
+[0m12:06:17.262082 [info ] [MainThread]:   schema: jaffle_shop
+[0m12:06:17.262082 [info ] [MainThread]:   location: US
+[0m12:06:17.262082 [info ] [MainThread]:   priority: interactive
+[0m12:06:17.277712 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m12:06:17.277712 [info ] [MainThread]:   impersonate_service_account: None
+[0m12:06:17.277712 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m12:06:17.277712 [info ] [MainThread]:   job_retries: 1
+[0m12:06:17.277712 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m12:06:17.277712 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m12:06:17.277712 [info ] [MainThread]:   timeout_seconds: 300
+[0m12:06:17.277712 [info ] [MainThread]:   client_id: None
+[0m12:06:17.277712 [info ] [MainThread]:   token_uri: None
+[0m12:06:17.277712 [info ] [MainThread]:   dataproc_region: None
+[0m12:06:17.277712 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m12:06:17.277712 [info ] [MainThread]:   gcs_bucket: None
+[0m12:06:17.277712 [info ] [MainThread]:   dataproc_batch: None
+[0m12:06:17.277712 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m12:06:17.277712 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m12:06:17.277712 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:06:17.277712 [debug] [MainThread]: On debug: select 1 as id
+[0m12:06:18.043539 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=swift-shore-430308-j4&j=bq:US:4303744d-34f2-4512-9a29-be20ea3d42d0&page=queryresults
+[0m12:06:18.653341 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:06:18.653341 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:06:18.653341 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ggatto\Python_env\DBT\dbt_project.yml> not found
+
+[0m12:06:18.653341 [debug] [MainThread]: Command `dbt debug` failed at 12:06:18.653341 after 5.37 seconds
+[0m12:06:18.684856 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:06:18.684856 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E399B55340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3ADD9C6A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3ADD92580>]}
+[0m12:06:18.684856 [debug] [MainThread]: Flushing usage events
+[0m13:52:00.913000 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001492AFFA1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001492B825D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001492D6448B0>]}
+
+
+============================== 13:52:00.944248 | 4bc8a464-d642-492f-9232-4ddff19f8f5d ==============================
+[0m13:52:00.944248 [info ] [MainThread]: Running with dbt=1.8.4
+[0m13:52:00.944248 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:52:01.006693 [info ] [MainThread]: dbt version: 1.8.4
+[0m13:52:01.006693 [info ] [MainThread]: python version: 3.8.2rc2
+[0m13:52:01.006693 [info ] [MainThread]: python path: C:\Users\ggatto\Python_env\DBT\dbt-env\Scripts\python.exe
+[0m13:52:01.006693 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m13:52:04.430716 [info ] [MainThread]: Using profiles dir at C:\Users\ggatto\.dbt
+[0m13:52:04.430716 [info ] [MainThread]: Using profiles.yml file at C:\Users\ggatto\.dbt\profiles.yml
+[0m13:52:04.430716 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ggatto\Python_env\DBT\dbt_project.yml
+[0m13:52:04.430716 [info ] [MainThread]: adapter type: bigquery
+[0m13:52:04.446253 [info ] [MainThread]: adapter version: 1.8.2
+[0m13:52:04.446253 [info ] [MainThread]: Configuration:
+[0m13:52:04.446253 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:52:04.446253 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m13:52:04.446253 [info ] [MainThread]: Required dependencies:
+[0m13:52:04.446253 [debug] [MainThread]: Executing "git --help"
+[0m13:52:04.477503 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:52:04.477503 [debug] [MainThread]: STDERR: "b''"
+[0m13:52:04.477503 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:52:04.477503 [info ] [MainThread]: Connection:
+[0m13:52:04.477503 [info ] [MainThread]:   method: service-account
+[0m13:52:04.477503 [info ] [MainThread]:   database: swift-shore-430308-j4
+[0m13:52:04.477503 [info ] [MainThread]:   execution_project: swift-shore-430308-j4
+[0m13:52:04.477503 [info ] [MainThread]:   schema: jaffle_shop
+[0m13:52:04.477503 [info ] [MainThread]:   location: US
+[0m13:52:04.477503 [info ] [MainThread]:   priority: interactive
+[0m13:52:04.477503 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:52:04.477503 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:52:04.477503 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:52:04.477503 [info ] [MainThread]:   job_retries: 1
+[0m13:52:04.477503 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:52:04.477503 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m13:52:04.477503 [info ] [MainThread]:   timeout_seconds: 300
+[0m13:52:04.493128 [info ] [MainThread]:   client_id: None
+[0m13:52:04.493128 [info ] [MainThread]:   token_uri: None
+[0m13:52:04.493128 [info ] [MainThread]:   dataproc_region: None
+[0m13:52:04.493128 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:52:04.493128 [info ] [MainThread]:   gcs_bucket: None
+[0m13:52:04.493128 [info ] [MainThread]:   dataproc_batch: None
+[0m13:52:04.493128 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m13:52:04.493128 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:52:04.493128 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:52:04.493128 [debug] [MainThread]: On debug: select 1 as id
+[0m13:52:05.496093 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=swift-shore-430308-j4&j=bq:US:a695ed16-73b2-4b24-b5c0-98e6f632b20b&page=queryresults
+[0m13:52:06.089702 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:52:06.089702 [info ] [MainThread]: [31m1 check failed:[0m
+[0m13:52:06.089702 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\ggatto\Python_env\DBT\dbt_project.yml> not found
+
+[0m13:52:06.089702 [debug] [MainThread]: Command `dbt debug` failed at 13:52:06.089702 after 5.22 seconds
+[0m13:52:06.137285 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:52:06.137285 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001492AFFA1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001492DACB490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001493F60B520>]}
+[0m13:52:06.137285 [debug] [MainThread]: Flushing usage events
+[0m13:58:52.787137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002157519A1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021575695E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021577128100>]}
+
+
+============================== 13:58:52.787137 | 67b281e4-07c1-4e5d-8b3e-2ad57c0a3839 ==============================
+[0m13:58:52.787137 [info ] [MainThread]: Running with dbt=1.8.4
+[0m13:58:52.787137 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\ggatto\\Python_env\\DBT\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:58:52.802735 [info ] [MainThread]: dbt version: 1.8.4
+[0m13:58:52.802735 [info ] [MainThread]: python version: 3.8.2rc2
+[0m13:58:52.802735 [info ] [MainThread]: python path: C:\Users\ggatto\Python_env\DBT\dbt-env\Scripts\python.exe
+[0m13:58:52.802735 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m13:58:53.537364 [info ] [MainThread]: Using profiles dir at C:\Users\ggatto\.dbt
+[0m13:58:53.537364 [info ] [MainThread]: Using profiles.yml file at C:\Users\ggatto\.dbt\profiles.yml
+[0m13:58:53.537364 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ggatto\Python_env\DBT\dbt_project.yml
+[0m13:58:53.537364 [info ] [MainThread]: adapter type: bigquery
+[0m13:58:53.537364 [info ] [MainThread]: adapter version: 1.8.2
+[0m13:58:53.615414 [info ] [MainThread]: Configuration:
+[0m13:58:53.615414 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m13:58:53.615414 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m13:58:53.615414 [info ] [MainThread]: Required dependencies:
+[0m13:58:53.615414 [debug] [MainThread]: Executing "git --help"
+[0m13:58:53.659925 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m13:58:53.659925 [debug] [MainThread]: STDERR: "b''"
+[0m13:58:53.659925 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m13:58:53.662932 [info ] [MainThread]: Connection:
+[0m13:58:53.662932 [info ] [MainThread]:   method: service-account
+[0m13:58:53.662932 [info ] [MainThread]:   database: swift-shore-430308-j4
+[0m13:58:53.662932 [info ] [MainThread]:   execution_project: swift-shore-430308-j4
+[0m13:58:53.662932 [info ] [MainThread]:   schema: jaffle_shop
+[0m13:58:53.662932 [info ] [MainThread]:   location: US
+[0m13:58:53.662932 [info ] [MainThread]:   priority: interactive
+[0m13:58:53.662932 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m13:58:53.662932 [info ] [MainThread]:   impersonate_service_account: None
+[0m13:58:53.662932 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m13:58:53.662932 [info ] [MainThread]:   job_retries: 1
+[0m13:58:53.662932 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m13:58:53.662932 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m13:58:53.662932 [info ] [MainThread]:   timeout_seconds: 300
+[0m13:58:53.662932 [info ] [MainThread]:   client_id: None
+[0m13:58:53.662932 [info ] [MainThread]:   token_uri: None
+[0m13:58:53.662932 [info ] [MainThread]:   dataproc_region: None
+[0m13:58:53.662932 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m13:58:53.662932 [info ] [MainThread]:   gcs_bucket: None
+[0m13:58:53.662932 [info ] [MainThread]:   dataproc_batch: None
+[0m13:58:53.662932 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m13:58:53.662932 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m13:58:53.662932 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:58:53.662932 [debug] [MainThread]: On debug: select 1 as id
+[0m13:58:54.445269 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=swift-shore-430308-j4&j=bq:US:c240aec4-e185-470a-af7d-52a43e476a1f&page=queryresults
+[0m13:58:55.040720 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m13:58:55.040720 [info ] [MainThread]: [32mAll checks passed![0m
+[0m13:58:55.040720 [debug] [MainThread]: Command `dbt debug` succeeded at 13:58:55.040720 after 2.30 seconds
+[0m13:58:55.040720 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m13:58:55.040720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002157519A1C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021575B5B760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000215097E7370>]}
+[0m13:58:55.040720 [debug] [MainThread]: Flushing usage events
+[0m14:03:49.238042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903A42C160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903A925E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903CEFB2B0>]}
+
+
+============================== 14:03:49.238042 | 4d412f13-7071-4a13-9cff-e1b17952d4fd ==============================
+[0m14:03:49.238042 [info ] [MainThread]: Running with dbt=1.8.4
+[0m14:03:49.238042 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\ggatto\\Python_env\\DBT\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:03:49.253656 [info ] [MainThread]: dbt version: 1.8.4
+[0m14:03:49.253656 [info ] [MainThread]: python version: 3.8.2rc2
+[0m14:03:49.253656 [info ] [MainThread]: python path: C:\Users\ggatto\Python_env\DBT\dbt-env\Scripts\python.exe
+[0m14:03:49.266117 [info ] [MainThread]: os info: Windows-10-10.0.22621-SP0
+[0m14:03:49.995716 [info ] [MainThread]: Using profiles dir at C:\Users\ggatto\.dbt
+[0m14:03:49.995716 [info ] [MainThread]: Using profiles.yml file at C:\Users\ggatto\.dbt\profiles.yml
+[0m14:03:49.995716 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\ggatto\Python_env\DBT\dbt_project.yml
+[0m14:03:49.995716 [info ] [MainThread]: adapter type: bigquery
+[0m14:03:49.995716 [info ] [MainThread]: adapter version: 1.8.2
+[0m14:03:50.081083 [info ] [MainThread]: Configuration:
+[0m14:03:50.081083 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:03:50.081083 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:03:50.081083 [info ] [MainThread]: Required dependencies:
+[0m14:03:50.081083 [debug] [MainThread]: Executing "git --help"
+[0m14:03:50.114301 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:03:50.114301 [debug] [MainThread]: STDERR: "b''"
+[0m14:03:50.114301 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:03:50.114301 [info ] [MainThread]: Connection:
+[0m14:03:50.114301 [info ] [MainThread]:   method: service-account
+[0m14:03:50.114301 [info ] [MainThread]:   database: swift-shore-430308-j4
+[0m14:03:50.114301 [info ] [MainThread]:   execution_project: swift-shore-430308-j4
+[0m14:03:50.129309 [info ] [MainThread]:   schema: jaffle_shop
+[0m14:03:50.130293 [info ] [MainThread]:   location: US
+[0m14:03:50.130686 [info ] [MainThread]:   priority: interactive
+[0m14:03:50.130686 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:03:50.130686 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:03:50.130686 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:03:50.130686 [info ] [MainThread]:   job_retries: 1
+[0m14:03:50.130686 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:03:50.130686 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m14:03:50.130686 [info ] [MainThread]:   timeout_seconds: 300
+[0m14:03:50.130686 [info ] [MainThread]:   client_id: None
+[0m14:03:50.130686 [info ] [MainThread]:   token_uri: None
+[0m14:03:50.130686 [info ] [MainThread]:   dataproc_region: None
+[0m14:03:50.130686 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:03:50.130686 [info ] [MainThread]:   gcs_bucket: None
+[0m14:03:50.130686 [info ] [MainThread]:   dataproc_batch: None
+[0m14:03:50.130686 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m14:03:50.130686 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:03:50.130686 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:03:50.130686 [debug] [MainThread]: On debug: select 1 as id
+[0m14:03:50.875375 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=swift-shore-430308-j4&j=bq:US:1641d7e6-21ff-47f0-9a71-9fa77da92dd9&page=queryresults
+[0m14:03:51.534070 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:03:51.534070 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:03:51.534070 [debug] [MainThread]: Command `dbt debug` succeeded at 14:03:51.534070 after 2.35 seconds
+[0m14:03:51.534070 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:03:51.534070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903A42C160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903AE7B820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002903AE4DAF0>]}
+[0m14:03:51.534070 [debug] [MainThread]: Flushing usage events
+[0m14:05:04.012726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8F77571F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8F65E2A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8FA226400>]}
+
+
+============================== 14:05:04.012726 | c300ad5d-b142-43dc-b418-105fcfa384df ==============================
+[0m14:05:04.012726 [info ] [MainThread]: Running with dbt=1.8.4
+[0m14:05:04.012726 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\ggatto\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\ggatto\\Python_env\\DBT\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:05:04.891126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8F7BAEC70>]}
+[0m14:05:04.938390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8FA240F10>]}
+[0m14:05:04.938390 [info ] [MainThread]: Registered adapter: bigquery=1.8.2
+[0m14:05:04.938390 [debug] [MainThread]: checksum: 54398663eddc8e4ac172fdab397e09b2aa6984947a84e6ec7983096c3fae7b7a, vars: {}, profile: , target: , version: 1.8.4
+[0m14:05:04.938390 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:05:04.938390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E88BEF7D60>]}
+[0m14:05:05.905963 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.jaffle_shop.example
+[0m14:05:05.921521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E88BFA9430>]}
+[0m14:05:06.015140 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E88C0697F0>]}
+[0m14:05:06.015140 [info ] [MainThread]: Found 471 macros
+[0m14:05:06.016233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c300ad5d-b142-43dc-b418-105fcfa384df', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E88BFA79A0>]}
+[0m14:05:06.017221 [info ] [MainThread]: 
+[0m14:05:06.018136 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m14:05:06.018666 [debug] [MainThread]: Command end result
+[0m14:05:06.031193 [debug] [MainThread]: Command `dbt run` succeeded at 14:05:06.031193 after 2.08 seconds
+[0m14:05:06.031193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8F77571F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E88BFA77C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E8F7CECAC0>]}
+[0m14:05:06.031193 [debug] [MainThread]: Flushing usage events
